@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Vijay Panneerselvam — Full Stack &amp; AI Engineer</title>
+  <desc id="description">From ideas to working software. AI tools, SaaS platforms and enterprise systems. vijay.devquery.in</desc>
+  <rect width="1200" height="630" fill="#f8f6f0"/>
+  <rect x="72" y="64" width="38" height="38" rx="10" fill="#c94d2e"/>
+  <path d="M91 71V95M79 83H103M82.5 74.5L99.5 91.5M82.5 91.5L99.5 74.5" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <text x="128" y="91" fill="#333c30" font-family="Arial, sans-serif" font-size="18" letter-spacing="1.4">VIJAY PANNEERSELVAM</text>
+  <text x="1025" y="89" fill="#7c8373" font-family="Arial, sans-serif" font-size="14" letter-spacing="1.5">PORTFOLIO</text>
+  <text x="72" y="242" fill="#11130f" font-family="Arial, sans-serif" font-size="82" font-weight="700" letter-spacing="-3">From ideas to</text>
+  <text x="68" y="346" fill="#c94d2e" font-family="Georgia, serif" font-size="100" font-style="italic" letter-spacing="-3">working software.</text>
+  <circle cx="1047" cy="308" r="58" fill="none" stroke="#bdc6b4" stroke-width="1.5"/>
+  <path d="M1019 336L1075 280M1043 280H1075V312" fill="none" stroke="#37432e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="73" y="446" fill="#273321" font-family="Arial, sans-serif" font-size="30" font-weight="700">Full Stack &amp; AI Engineer</text>
+  <text x="73" y="487" fill="#78806e" font-family="Arial, sans-serif" font-size="22">AI tools · SaaS platforms · Enterprise systems</text>
+  <path d="M72 542H1128" stroke="#d7dbce"/>
+  <text x="72" y="587" fill="#4c6149" font-family="Arial, sans-serif" font-size="19">vijay.devquery.in</text>
+  <text x="1009" y="587" fill="#7c8373" font-family="Arial, sans-serif" font-size="17">Chennai, India</text>
+  <rect y="620" width="1200" height="10" fill="#c94d2e"/>
+</svg>

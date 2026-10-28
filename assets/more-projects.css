@@ -1,0 +1,73 @@
+.vp-more-projects {
+  width: 100%;
+  margin-top: clamp(30px, 5vw, 68px);
+  scroll-margin-top: 40px;
+}
+
+.vp-more-projects > summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 15px 23px;
+  border: 1px solid #cfd5c8;
+  border-radius: 50px;
+  color: #243326;
+  background: #fff;
+  cursor: pointer;
+  list-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background .2s, border-color .2s;
+}
+
+.vp-more-projects > summary::-webkit-details-marker { display: none; }
+.vp-more-projects > summary:hover { background: #f6f7f1; border-color: #8d9a82; }
+.vp-more-projects > summary:focus-visible { outline: 2px solid #c94d2e; outline-offset: 6px; }
+.vp-more-count { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 50%; background: #edf0e5; color: #667454; font-size: 12px; }
+.vp-more-arrow { font: 20px/1 Arial,sans-serif; transition: transform .2s; }
+.vp-more-projects .vp-more-close-label { display: none; }
+.vp-more-projects[open] .vp-more-open-label { display: none; }
+.vp-more-projects[open] .vp-more-close-label { display: inline; }
+.vp-more-projects[open] .vp-more-arrow { transform: rotate(180deg); }
+
+.vp-more-content { padding-top: clamp(36px, 5vw, 60px); }
+.vp-more-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid #e1e5da; }
+.vp-more-heading h2 { margin: 0; color: #27392b; font-size: clamp(25px, 3vw, 38px); font-weight: 400; letter-spacing: -1px; }
+.vp-more-heading p { margin: 0; font-size: 11px; letter-spacing: 1.2px; color: #839078; text-transform: uppercase; }
+.vp-more-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 22px; }
+.vp-more-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; padding: 0; border: 1px solid #e1e6d8; border-radius: 20px; background: #fff; color: #263c2b; text-decoration: none; transition: border-color .2s, transform .2s; }
+.vp-more-card .vp-more-scene { position: relative; width: 100%; aspect-ratio: 5 / 4; max-height: max(160px, calc(100svh - 22rem)); flex: none; border-bottom: 1px solid #e1e6d8; }
+.vp-more-card-body { position: relative; display: flex; flex-direction: column; flex: 1; padding: clamp(24px, 3.2vw, 40px); }
+.vp-more-card:nth-child(2) { background: #f7f2e8; border-color: #e9e2d6; }
+.vp-more-card:nth-child(3) { background: #edf2f3; border-color: #dce5e7; }
+.vp-more-card:nth-child(4) { background: #f1eef5; border-color: #e3ddec; }
+.vp-more-card:hover { transform: translateY(-3px); border-color: #a4b199; }
+.vp-more-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 10px; padding-right: 22px; color: #7e8c73; font-size: 10px; line-height: 1.5; letter-spacing: 1.1px; text-transform: uppercase; }
+.vp-more-number { color: #a1ad96; font-variant-numeric: tabular-nums; }
+.vp-more-card h3 { margin: 25px 34px 14px 0; max-width: 25ch; font-size: clamp(23px, 2.4vw, 32px); font-weight: 500; line-height: 1.15; letter-spacing: -.8px; }
+.vp-more-description { margin: 0 0 27px; color: #697661; font-size: 15px; line-height: 1.65; }
+.vp-more-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: auto; }
+.vp-more-tags span { border: 1px solid #ffffff; border-radius: 30px; background: #ffffff80; padding: 6px 10px; font-size: 11px; line-height: 1.3; color: #617358; }
+.vp-more-card-action { position: absolute; top: 31px; right: 28px; color: #76866d; font-size: 25px; line-height: 1; }
+
+@media (max-width: 600px) {
+  .vp-more-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .vp-more-heading { align-items: flex-start; flex-direction: column; gap: 9px; }
+  .vp-more-card-body { padding: 26px; }
+  .vp-more-card h3 { margin-top: 22px; font-size: 27px; }
+  .vp-more-card-action { top: 24px; right: 23px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vp-more-projects > summary, .vp-more-arrow, .vp-more-card { transition: none; }
+  .vp-more-card:hover { transform: none; }
+}
+
+@media (max-width: 380px) {
+  .vp-more-card-body { padding: 22px; }
+  .vp-more-card h3 { margin: 18px 25px 12px 0; font-size: 24px; }
+  .vp-more-description { margin-bottom: 20px; font-size: 14px; line-height: 1.55; }
+}

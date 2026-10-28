@@ -1,0 +1,28 @@
+engine-blueprint {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 710 / 893;
+  overflow: hidden;
+  background: #4e6035;
+}
+
+#work .fda-portfolio-image engine-blueprint {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  aspect-ratio: inherit;
+}
+
+.vp-engine-demo {
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.vp-engine-demo engine-blueprint {
+  aspect-ratio: 3 / 2;
+  max-height: 62vh;
+}
+

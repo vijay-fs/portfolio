@@ -1,0 +1,30 @@
+project-scene {
+  display: block;
+  position: relative;
+  width: 100%;
+  aspect-ratio: inherit;
+  overflow: hidden;
+  background: #e9e6dc;
+}
+
+project-scene[project="metamarch"] {
+  background: radial-gradient(ellipse at 36% 30%, #f5f3e9, #c5cdbb);
+}
+
+#work .fda-portfolio-image project-scene {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.vp-project-scene {
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.vp-project-scene project-scene {
+  aspect-ratio: 3 / 2;
+  max-height: 62vh;
+}
